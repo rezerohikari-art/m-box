@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> <!--Mulish  -->
     
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -26,32 +28,38 @@
     <header class="header">
         <div class="header__body container">
             
-            <nav class="menu header__menu"> 
-                <img src="images/logo.png" alt="" class="logo">
-            
-                <div class="menu__list">                                                   
-                    <div class="menu__item">
-                        <a href="" class="menu__link">Home</a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <i class="fa fa-bars navbar__icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <div class="menu__line"></div> 
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                        <div class="menu__line"></div> 
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                        <div class="menu__line"></div> 
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                        <div class="menu__line"></div> 
+                        </li>
+                    </ul>
+                    
+                        <div class="menu__icon">
+                            <img src="images/icon-nav1.png" alt="" class="menu__img">
+                            <img src="images/icon-nav2.png" alt="" class="menu__img">
+                            <img src="images/icon-nav3.png" alt="" class="menu__img">
+                        </div>
                     </div>
-                    <div class="menu__item">
-                        <a href="" class="menu__link">TV Shows</a>
-                        <div class="menu__line"></div>
-                    </div>
-                    <div class="menu__item">
-                        <a href="" class="menu__link">Movies</a>
-                        <div class="menu__line"></div>
-                    </div>
-                    <div class="menu__item">
-                        <a href="" class="menu__link">Series</a>
-                        <div class="menu__line"></div>
-                    </div>
-                </div>
-                
-                <div class="menu__icon">
-                    <img src="images/icon-nav1.png" alt="" class="menu__img">
-                    <img src="images/icon-nav2.png" alt="" class="menu__img">
-                    <img src="images/icon-nav3.png" alt="" class="menu__img">
                 </div>
             </nav>
             
@@ -92,15 +100,21 @@
                         <i class="fa fa-chevron-right section-header__chevron-right"></i>
                     </div>
                     
-                    <div class="show__row">
-                        <div class="show__column"><img src="images/film1.png" alt="" class="show__img"></div>
-                        <div class="show__column"><img src="images/film2.png" alt="" class="show__img"></div>
-                        <div class="show__column"><img src="images/film3.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film4.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film5.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film6.png" alt="" class="show__img"></div>
+                    <div class="show__slider">
+                        <div class="show__item"><img src="images/film1.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film2.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film3.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film4.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film5.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film6.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film1.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film2.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film3.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film4.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film5.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film6.png" alt="" class="show__img"></div>
                   
-                        <i class="fa fa-chevron-right chevron-right"></i>
+             
                     </div>
                 </div>
             
@@ -111,15 +125,21 @@
                         <i class="fa fa-chevron-right section-header__chevron-right"></i>
                     </div>
                     
-                    <div class="show__row">
-                        <div class="show__column"><img src="images/film7.png" alt="" class="show__img"></div>
-                        <div class="show__column"><img src="images/film8.png" alt="" class="show__img"></div>
-                        <div class="show__column"><img src="images/film9.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film10.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film11.png" alt="" class="show__img"></div>
-                        <div class="show__column d-none"><img src="images/film12.png" alt="" class="show__img"></div>
-                      
-                        <i class="fa fa-chevron-right chevron-right"></i>
+                    <div class="show__slider">
+                        <div class="show__item"><img src="images/film1.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film2.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film3.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film4.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film5.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film6.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film1.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film2.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film3.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film4.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film5.png" alt="" class="show__img"></div>
+                        <div class="show__item"><img src="images/film6.png" alt="" class="show__img"></div>
+                  
+             
                     </div>
                 </div>
                 
@@ -151,20 +171,21 @@
     </section>
     
     <section class="channel py-50">
-        <div class="container channel__body show__body ">
+        <div class="container channel__body show__body">
             <div class="section-header">
                 <div class="section-header__line"></div>
                 <h2 class="section-header__title">Popular Channels</h2>
                 <i class="fa fa-chevron-right section-header__chevron-right"></i>
             </div>
             
-            <div class="channel__content show__row">
+            <div class="channel__slider">
                 <div class="channel__item"></div>
                 <div class="channel__item"></div>
                 <div class="channel__item"></div>
-                <div class="channel__item d-none"></div>
-                <div class="channel__item d-none"></div>
-                <i class="fa fa-chevron-right chevron-right"></i>
+                <div class="channel__item"></div>
+                <div class="channel__item"></div>
+                <div class="channel__item"></div>
+                <div class="channel__item"></div>
             </div>
         </div>
     </section>
@@ -177,33 +198,55 @@
                 <i class="fa fa-chevron-right section-header__chevron-right"></i>
             </div>
             
-            <div class="actor__content show__row">
-                <div class="actor__item show__column">
+            <div class="actor__slider">
+                <div class="actor__item">
                     <img src="images/actor1.png" alt="" class="actor__img">
                     <span class="actor__name">Samantha Bowen</span>
                 </div>
-                <div class="actor__item show__column">
+                <div class="actor__item">
                     <img src="images/actor2.png" alt="" class="actor__img">
                     <span class="actor__name">Rhys Birch</span>
                 </div>
-                <div class="actor__item show__column">
+                <div class="actor__item">
                     <img src="images/actor3.png" alt="" class="actor__img">
                     <span class="actor__name">James Holloway</span>
                 </div>
-                <div class="actor__item show__column d-none">
+                <div class="actor__item">
                     <img src="images/actor4.png" alt="" class="actor__img">
                     <span class="actor__name">Joshua Walton</span>
                 </div>
-                <div class="actor__item show__column d-none">
+                <div class="actor__item">
                     <img src="images/actor5.png" alt="" class="actor__img">
                     <span class="actor__name">Patrick Elliott</span>
                 </div>
-                <div class="actor__item show__column d-none">
+                <div class="actor__item">
                     <img src="images/actor6.png" alt="" class="actor__img">
                     <span class="actor__name">Morgan O'Neill</span>
                 </div>
-                
-                <i class="fa fa-chevron-right chevron-right"></i>
+                <div class="actor__item">
+                    <img src="images/actor1.png" alt="" class="actor__img">
+                    <span class="actor__name">Samantha Bowen</span>
+                </div>
+                <div class="actor__item">
+                    <img src="images/actor2.png" alt="" class="actor__img">
+                    <span class="actor__name">Rhys Birch</span>
+                </div>
+                <div class="actor__item">
+                    <img src="images/actor3.png" alt="" class="actor__img">
+                    <span class="actor__name">James Holloway</span>
+                </div>
+                <div class="actor__item">
+                    <img src="images/actor4.png" alt="" class="actor__img">
+                    <span class="actor__name">Joshua Walton</span>
+                </div>
+                <div class="actor__item">
+                    <img src="images/actor5.png" alt="" class="actor__img">
+                    <span class="actor__name">Patrick Elliott</span>
+                </div>
+                <div class="actor__item">
+                    <img src="images/actor6.png" alt="" class="actor__img">
+                    <span class="actor__name">Morgan O'Neill</span>
+                </div>
             </div>
         </div>
     </section>
@@ -267,5 +310,90 @@
             </ul>
         </div>
     </footer>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+        $('.show__slider').slick({
+            slidesToShow:6,
+            prevArrow: '<button class="btn-none"></button>',
+            nextArrow: '<i class="fa fa-chevron-right chevron-right"></i>',
+            responsive: [
+                {
+                    breakpoint: 991.98,
+                    settings: {
+                        slidesToShow:3,
+                    }
+                },
+                {
+                    breakpoint: 767.98,
+                    settings: {
+                        slidesToShow:2,
+                    }
+                },
+                {
+                    breakpoint: 575.98,
+                    settings: {
+                        slidesToShow:1,
+                    }
+                },
+            ]
+        });
+        
+        $('.channel__slider').slick({
+            slidesToShow:5,
+            prevArrow: '<button class="btn-none"></button>',
+            nextArrow: '<i class="fa fa-chevron-right chevron-right"></i>',
+            responsive: [
+                {
+                    breakpoint: 991.98,
+                    settings: {
+                        slidesToShow:3,
+                    }
+                },
+                {
+                    breakpoint: 767.98,
+                    settings: {
+                        slidesToShow:2,
+                    }
+                },
+                {
+                    breakpoint: 575.98,
+                    settings: {
+                        slidesToShow:1,
+                    }
+                },
+            ]
+        });
+        $('.actor__slider').slick({
+            slidesToShow:5,
+            prevArrow: '<button class="btn-none"></button>',
+            nextArrow: '<i class="fa fa-chevron-right chevron-right"></i>',
+            responsive: [
+                {
+                    breakpoint: 991.98,
+                    settings: {
+                        slidesToShow:3,
+                    }
+                },
+                {
+                    breakpoint: 767.98,
+                    settings: {
+                        slidesToShow:2,
+                    }
+                },
+                {
+                    breakpoint: 575.98,
+                    settings: {
+                        slidesToShow:1,
+                    }
+                },
+            ]
+        });
+    </script>
 </body>
 </html>

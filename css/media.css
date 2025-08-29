@@ -6,16 +6,15 @@
     }
     
     .header__promo  {
-        margin-left: 110px;
+        margin: 140px 0 0 110px;
     }
     
     .promo__title {
         font-size: 90px;
     }
     
-    .header__body{
-        height: 780px;
-        padding-bottom: 160px;
+    .header {
+        padding-bottom: 140px;
     }
     
     .button-primary {
@@ -52,24 +51,26 @@
         height: 65px;   
     }
     
+    .navbar-nav {
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+    }
+    
     .menu__icon {
         width: 125px;
-    }
-    
-    .menu__list {
-        width:320px;
-    }
-    
-    .menu__link {
-        font-size:15px
+        margin: 30px auto 0;
     }
     
     .menu__img {
         height:20px;
     }
     
-    .header__body {
-        height:720px;
+    .header {
         padding-bottom:120px;
     }
     
@@ -82,23 +83,15 @@
     }
     
     .header__promo  {
-        margin-left: 40px;
+        margin: 100px 0 0 40px;
+    }
+    
+    .header {
+        padding-bottom: 80px;
     }
     
     .button-primary {
         padding:16px 40px;
-    }
-    
-     .show__column {
-        margin: 0 7px;
-    }
-    
-    .show__row {
-        margin: 0 -7px;
-    }
-    
-    .chevron-right {
-        font-size: 24px;
     }
     
     .genre__item {
@@ -167,10 +160,6 @@
         height:55px;
     }
     
-    .menu__list {
-        width: 260px;
-    }
-    
     .menu__link {
         font-size: 13px;
     }
@@ -179,12 +168,15 @@
         height: 17px;
     }
     
-    .menu__icon {
-        width: 95px;
+    .header {
+        padding-bottom: 80px;
     }
     
     .header__promo  {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 0;
     }
     
     .promo__title {
@@ -197,8 +189,7 @@
         margin: 20px 0;
     }
     
-   .header__body {
-        height: 630px;
+   .header {
         padding-bottom: 108px;
     }
     
@@ -235,18 +226,13 @@
         height: 200px;
     }
     
-    .menu__list {
-        margin: 20px 0;
-    }
-    
-    .header__body {
-        height: 550px;
+    .header {
         padding-bottom: 15px;
     }
     
     .header__promo {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     
     .promo__title {
@@ -325,6 +311,10 @@
     
     .footer__link {
         font-size: 11px;
+    }
+    
+    .channel__box {
+        padding: 0 15px;
     }
 }
  
