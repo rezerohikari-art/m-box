@@ -1,7 +1,6 @@
-*{
+h1,h2,h3,h4,h5,h6,p,ul,ol {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -20,6 +19,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding-bottom: 170px;
 }
 
 .container {
@@ -29,55 +29,12 @@ header {
 }
 
 .header__body {
-    height: 791px;
-    padding: 0 15px 169px 15px;
     max-width: 1530px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.header__menu {
-    padding-top: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu__list {
-    display: flex;
-    height: 22px;
-    width: 385px;
-    justify-content: space-between;
-}
-
-.menu__link {
-    font-size: 16px;
-    color: #818182;
-}
-
-.menu__line {
-    margin-top: 5px;
-}
-
-.menu__item:hover .menu__link {
-    color: #fff;
-}
-
-.menu__item:hover .menu__line {
-    background: linear-gradient(to right, #26FFF2, #326CFF);
-    height: 2px;;
-}
-
-.menu__icon {
-    width: 208px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 15px;
 }
 
 .header__promo {
-    margin-left: 212px;
+    margin: 210px 0 0 212px;
 }
 
 .promo__title {
@@ -90,6 +47,10 @@ header {
 
 p, h1, h2, h3 {
     color: #fff;
+}
+ 
+.section-header__title {
+    font-weight: 700;
 }
 
 .promo__grade {
@@ -198,21 +159,13 @@ p, h1, h2, h3 {
     color: #fff;
     margin-left: 15px;
     margin-top: 7px;   
+    font-size: 20px;
 }
 
-.show__row {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 0 -15px;
-}
-
-.show__img,
-.actor__img {
+.show__img {
     border-radius: 20px;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    display: block; 
 }
 
 .show__img:hover {
@@ -226,7 +179,7 @@ p, h1, h2, h3 {
 .chevron-right{
     color: #fff;
     position: absolute;
-    right: -19px;
+    right: -18px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
@@ -236,12 +189,8 @@ p, h1, h2, h3 {
     margin-top: 55px;
 }
 
-.show__body {
-    padding-right: 35px;
-}
-
-.show__column {
-    margin: 0 15px;
+.show__item {
+    padding: 15px 10px;
 }
 
 .genre__content {
@@ -270,7 +219,7 @@ p, h1, h2, h3 {
 .genre__item:nth-child(8) {background: linear-gradient(135deg, #1FA2FF, #1F535C);}
 
 .channel__item {
-    width: 260px;
+    width: 260px !important;
     height: 118px;
     background-color: #fff;
     border-radius: 20px;
@@ -278,7 +227,7 @@ p, h1, h2, h3 {
 }
 
 .actor__item {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -289,7 +238,6 @@ p, h1, h2, h3 {
     font-size: 18px;
     font-weight: 800;
     margin-top: 20px;
-
 }
 
 .bunny__content {
@@ -376,4 +324,83 @@ p, h1, h2, h3 {
 
 .footer__item:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.bg-body-tertiary {
+    background: none !important;
+}
+
+.nav-link,
+.active {
+    font-size: 16px;
+    color: #818182 !important;
+    padding: 0 !important;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff !important  ;
+}
+
+.nav-item {
+    width: 78px;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+
+.navbar-nav {
+    height: 22px;
+    max-width: 385px;
+    width: 100%;
+    justify-content: space-between;  
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding-top: 49px;
+}
+
+.menu__icon {
+    width: 208px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__line {
+    margin-top: 5px;
+}
+
+.nav-item:hover .menu__line {
+    background: linear-gradient(to right, #26FFF2, #326CFF);
+    height: 2px;;
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;  
+}
+
+.navbar__icon {
+    font-size: 30px;
+}
+
+.btn-none {
+    display: none !important;
+}
+
+.slick-slide div {
+    display: flex;
+    justify-content: center;
+}
+
+.show__body {
+    padding-right: 30px;
 }
